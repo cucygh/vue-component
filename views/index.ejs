@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Vue+Yo+Webpack-移动端开发模式</title>
+    <link rel="stylesheet" href="/online/css/index.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+    <div class="yo-flex" id="wrapper">
+        <header class="yo-header m-header">
+            <h2 class="title">Touch开发</h2>
+        </header>
+        <router-view class="flex"></router-view>
+        <footer class="yo-tab yo-tab-view m-tabview">
+            <a v-link="{path:'/bar'}" class="item item-y-ico">
+                <i class="yo-ico">&#xf04b;</i>开门
+            </a>
+            <a v-link="{path:'/foo'}" class="item item-y-ico">
+                <i class="yo-ico">&#xf04a;</i>打狗
+            </a>
+            <a v-link="{path:'/empty'}" class="item item-y-ico">
+                <i class="yo-ico">&#xf067;</i>广告
+            </a>
+        </footer>
+    </div>
+    <script src="http://delivr.cdnjs.net/momentjs/2.8.3/moment.min.js" charset="utf-8"></script>
+    <script src="/online/js/zindex.js" charset="utf-8"></script>
+</body>
+</html>
