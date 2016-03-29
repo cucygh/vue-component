@@ -5283,4 +5283,31 @@ body {
     .yo-tab > .item-only-ico .yo-ico {
       font-size: 0.32rem; }
 
+.yo-header-index {
+  border-color: #f4f5f6;
+  background-color: #d43d3d; }
+
+.yo-header-nav {
+  border-color: #f4f5f6;
+  background-color: #f4f5f6;
+  color: #505050; }
+
+.yo-header-nav {
+  line-height: 0.4rem; }
+  .yo-header-nav ul {
+    background: #f4f5f6;
+    color: #505050;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch; }
+    .yo-header-nav ul::-webkit-scrollbar {
+      display: none; }
+    .yo-header-nav ul li {
+      display: inline-block;
+      padding: 0 0.1rem; }
+      .yo-header-nav ul li.active {
+        color: #f85959; }
+
+.yo-flex .flex::-webkit-scrollbar {
+  display: none; }
+
 /*# sourceMappingURL=index.css.map */

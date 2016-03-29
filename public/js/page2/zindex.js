@@ -12,10 +12,6 @@
 var Vue = require('vue');
 var VueRouter = require('vue-router');
 Vue.use(VueRouter);
-Vue.component('suggest', require('../component/suggest.vue'));
-Vue.component('modal', require('../component/modal.vue'));
-Vue.component('datepicker', require('../component/datepicker.vue'));
-Vue.component('paging', require('../component/paging.vue'));
 var app = Vue.extend({});
 
 var router = new VueRouter({
@@ -24,11 +20,17 @@ var router = new VueRouter({
 
 router.map({
     '/foo': {
-        component: require('./door.vue')
+        component: require('./list.vue')
     },
     '/bar': {
-        component: require('./room.vue')
+        component: require('./list.vue')
+    },
+    '/empty': {
+        component: require('./empty.vue')
     }
 });
+router.afterEach(function (transition) {
+    console.log('switch');
+})
 
 router.start(app, '#wrapper');

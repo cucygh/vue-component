@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html data-dpr="2">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>移动端一体化解决方案</title>
+    <link rel="stylesheet" href="/online/css/index.css" media="screen" title="no title" charset="utf-8">
+</head>
+<body>
+    <div class="yo-flex" id="wrapper">
+        <header class="yo-header m-header yo-header-index">
+            <h2 class="title">Touch开发</h2>
+            <ul>
+                <li v-link="{path:'/bar'}">推荐</li>
+                <li v-link="{path:'/bar'}">新闻</li>
+                <li v-link="{path:'/foo'}">热点</li>
+                <li v-link="{path:'/foo'}">新闻</li>
+                <li v-link="{path:'/empty'}">娱乐</li>
+                <li v-link="{path:'/empty'}">农业</li>
+                <li v-link="{path:'/empty'}">段子</li>
+                <li v-link="{path:'/empty'}">美女</li>
+            </ul>
+        </header>
+        <router-view class="flex"></router-view>
+    </div>
+    <script src="/online/js/zindex.js" charset="utf-8"></script>
+</body>
+</html>

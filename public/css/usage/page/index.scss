@@ -1,2 +1,34 @@
 @charset "UTF-8";
 @import "../layout/layout.scss";
+@include yo-header( $name: index, $bgcolor: #d43d3d, $bordercolor: #f4f5f6 );
+@include yo-header( $name: nav, $bordercolor: #f4f5f6, $bgcolor: #f4f5f6, $color: #505050 );
+
+// 头部导航样式重定义
+.yo-header-nav {
+    line-height: 0.4rem;
+    ul {
+        background: #f4f5f6;
+        color: #505050;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+        &::-webkit-scrollbar{
+            display:none;
+        }
+        li {
+            display: inline-block;
+            padding: 0 0.1rem;
+            &.active {
+                color: #f85959;
+            }
+        }
+    }
+}
+
+// flex重定义
+.yo-flex{
+    .flex{
+        &::-webkit-scrollbar{
+            display:none;
+        }
+    }
+}
