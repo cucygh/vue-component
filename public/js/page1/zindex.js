@@ -16,6 +16,7 @@ Vue.component('suggest', require('../component/suggest.vue'));
 Vue.component('modal', require('../component/modal.vue'));
 Vue.component('datepicker', require('../component/datepicker.vue'));
 Vue.component('paging', require('../component/paging.vue'));
+Vue.component('tab',require('../component/tab.vue'));
 var app = Vue.extend({});
 
 var router = new VueRouter({

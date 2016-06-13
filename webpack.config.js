@@ -1,5 +1,5 @@
 module.exports = {
-    entry: './public/js/page3/zindex.js',
+    entry: './public/js/page1/zindex.js',
     output: {
         path: './public/online/js',
         filename: 'zindex.js'

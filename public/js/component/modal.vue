@@ -9,7 +9,7 @@
         </slot>
         <div class="bd">
             <slot name="body">
-                <p>还没有添加内容</p>
+                <p>少时诵诗书试试</p>
             </slot>
         </div>
         <slot name="footer">

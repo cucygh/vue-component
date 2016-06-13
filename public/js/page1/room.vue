@@ -20,7 +20,9 @@
     </div>
 
     <modal :show.sync="show" :type.once="type" :ok.once="onOk" :title.once="title" :class.once="dialogClass">
+        <p slot="body">
 
+        </p>
     </modal>
 
     <paging :current.sync="pageCurrent" :width="pageWidth" :total="pageTotal" :change="pageChange"></paging>
@@ -41,7 +43,7 @@ module.exports = {
         return {
             list: ['room1', 'room2', 'room3'],
             show: true,
-            type: 'alert',
+            type: 'prompt',
             title: '公告',
             dialogClass: 'yo-dialog-test',
             pageCurrent: 6,

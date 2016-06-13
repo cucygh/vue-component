@@ -5,10 +5,14 @@
 
 <template id="">
 <div id="door">
-    <ul class="yo-list">
+    <!-- <ul class="yo-list">
         <li class="item" v-for="item in list">{{{item}}}</li>
-    </ul>
-    <suggest :url="sugguestUrl" :value.sync="sugguestValue" :watch.sync="sugguestWatch"></suggest>
+    </ul> -->
+    <!-- <tab :navigation="navList" :active.sync="active" :switch="switchTab">
+        <p v-if="active=='door'">tab1</p>
+        <p v-if="active=='qiao'">tab2</p>
+    </tab> -->
+    <!-- <suggest :url="sugguestUrl" :value.sync="sugguestValue" :watch.sync="sugguestWatch"></suggest> -->
     <datepicker :type.sync="dateType" :init.sync="defaultDate"></datepicker>
 </div>
 
@@ -22,12 +26,23 @@ module.exports = {
     },
     data: function() {
         return {
-            list: ['<b>开门大吉</b>', '开门吃饭', '开门迎喜', '开门开始了', '开门开始了', '开门开始了'],
+            list: ['<b>开门大吉</b>', '开门吃饭', '开门迎喜'],
             dateType:'day',
             sugguestUrl: '/sugguest',
             sugguestValue: '',
             sugguestWatch: true,
-            defaultDate:'2015-12-25'
+            defaultDate:'2015-12-26',
+            navList:[{
+                text:'开门大吉',
+                key:'door'
+            },{
+                text:'金水桥边',
+                key:'qiao'
+            }],
+            active:'door',
+            switchTab:function(key){
+                this.active=key;
+            }
         }
     }
 }

@@ -8,10 +8,15 @@
 </head>
 <body>
     <div class="yo-flex" id="wrapper">
-        <header class="yo-header m-header yo-header-index">
+        <header class="yo-header m-header">
             <h2 class="title">Touch开发 {{move}}</h2>
         </header>
-        <content :move.sync="move"></content>
+        <router-view class="flex"></router-view>
+        <footer class="yo-tab yo-tab-view m-tabview">
+            <a v-link="{ path: '/foo' }" class="item item-y-ico item-on"><i class="yo-ico"></i>定位</a>
+            <a v-link="{ path: '/bar' }" class="item item-y-ico"><i class="yo-ico"></i>无线</a>
+            <a v-link="{ path: '/empty' }" class="item item-y-ico"><i class="yo-ico"></i>刷新</a>
+        </footer>
     </div>
     <script src="/online/js/zindex.js" charset="utf-8"></script>
 </body>
